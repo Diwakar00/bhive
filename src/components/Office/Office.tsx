@@ -1,3 +1,4 @@
+import { CrosshairIcon } from "lucide-react";
 import "./Office.css";
 
 export interface OfficeProps {
@@ -33,9 +34,9 @@ const Office: React.FC<OfficeProps> = ({ address, day_pass_price, images }) => {
   return (
     <div className="workspace-card">
       <div className="card-header">
-        <p className="workspace-title">{truncate(address)}</p>
+        <h4 className="workspace-title">{truncate(address)}</h4>
         <div className="location-info">
-          <div className="location-icon"></div>
+          <CrosshairIcon className="location-icon" />
           <span className="distance">6 Kms</span>
         </div>
       </div>
@@ -46,12 +47,11 @@ const Office: React.FC<OfficeProps> = ({ address, day_pass_price, images }) => {
 
       <div className="pricing-section">
         <div className="day-pass">
-          <span>
+          <span className="price-container">
             <div className="pass-label">Day Pass</div>
-            <div className="price-container">
+            <div className="price">
               <p className="currency">₹{day_pass_price}</p>
-              {/* <span className="price">{day_pass_price}</span> */}
-              <span className="duration">/ Day</span>
+              <span className="duration">/Day</span>
             </div>
           </span>
           <div className="arrow-icon">❯❯❯</div>
@@ -61,10 +61,9 @@ const Office: React.FC<OfficeProps> = ({ address, day_pass_price, images }) => {
           <div className="discount-badge">20% Discount</div>
           <span>
             <div className="pass-label">Bulk Pass</div>
-            <div className="price-container">
+            <div className="price">
               <p className="currency">₹{day_pass_price * 8}</p>
-              {/* <span className="price">{day_pass_price * 8}</span> */}
-              <span className="duration">/ 10 Days</span>
+              <span className="duration">/10 Days</span>
             </div>
           </span>
           <div className="arrow-icon">❯❯❯</div>
