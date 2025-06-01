@@ -10,8 +10,8 @@ const AppSection = () => (
           workspace, collaborate efficiently, and unlock exclusive perks.
         </p>
         <div className="app-buttons">
-          <img src="public/assets/playstore.png" className="app-btn"></img>
-          <img src="public/assets/appstore.png" className="app-btn"></img>
+          <img src="/assets/playstore.png" className="app-btn"></img>
+          <img src="/assets/appstore.png" className="app-btn"></img>
         </div>
       </div>
       <div className="phone-mockup">

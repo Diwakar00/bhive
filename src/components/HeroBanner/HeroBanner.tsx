@@ -3,7 +3,7 @@ const HeroBanner: React.FC = () => (
   <section className="hero">
     <div className="hero-content">
       <div className="image-container">
-        <img src="public/assets/background.png" alt="Background" />
+        <img src="/assets/background.png" alt="Background" />
         <div className="overlay-text">
           <h1>
             Host your meeting with world-class amenities. Starting at
@@ -14,7 +14,7 @@ const HeroBanner: React.FC = () => (
 
       <div className="video-container">
         <video autoPlay={false} loop={false}>
-          <source src="public/assets/Coworking video.mp4" type="video/mp4" />
+          <source src="/assets/Coworking video.mp4" type="video/mp4" />
         </video>
       </div>
     </div>
