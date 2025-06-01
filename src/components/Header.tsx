@@ -4,7 +4,7 @@ const Header: React.FC = () => (
   <header className="header">
     <nav className="nav">
       <img
-        src="src/assets/bhive-logo.png"
+        src="public/assets/bhive-logo.png"
         alt="bhive-logo"
         className="logo"
       ></img>

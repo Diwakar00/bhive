@@ -10,7 +10,7 @@ const Offices = () => {
       .then((response) => response.json())
       .then((data: OfficeProps[]) => {
         data.forEach((space, i) => {
-          space.images = "src/assets/office" + ((i % 5) + 1) + ".jpg";
+          space.images = "public/assets/office" + ((i % 5) + 1) + ".jpg";
         });
         setSpaces(data);
       })
