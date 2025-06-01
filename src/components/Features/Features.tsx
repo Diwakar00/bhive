@@ -8,38 +8,39 @@ import {
   LandPlot,
   Wifi,
 } from "lucide-react";
+import "./Features.css";
 
 const features = [
   {
-    icon: <CalendarHeart size={16} className="section-icon" />,
+    icon: <CalendarHeart className="section-icon" />,
     title: "Community Events",
   },
   {
-    icon: <Dumbbell size={16} className="section-icon" />,
+    icon: <Dumbbell className="section-icon" />,
     title: "Gym Facilities",
   },
   {
-    icon: <Wifi size={16} className="section-icon" />,
+    icon: <Wifi className="section-icon" />,
     title: "High-Speed Wifi",
   },
   {
-    icon: <Coffee size={16} className="section-icon" />,
+    icon: <Coffee className="section-icon" />,
     title: "Cafe & Tea Bar",
   },
   {
-    icon: <BadgeIndianRupee size={16} className="section-icon" />,
+    icon: <BadgeIndianRupee className="section-icon" />,
     title: "Affordable",
   },
   {
-    icon: <Armchair size={16} className="section-icon" />,
+    icon: <Armchair className="section-icon" />,
     title: "Comfort Lounges",
   },
   {
-    icon: <History size={16} className="section-icon" />,
+    icon: <History className="section-icon" />,
     title: "Quick Booking",
   },
   {
-    icon: <LandPlot size={16} className="section-icon" />,
+    icon: <LandPlot className="section-icon" />,
     title: "Sports Area",
   },
 ];

@@ -1,0 +1,130 @@
+.hero {
+  padding-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/api/placeholder/400/300") no-repeat center right;
+  background-size: contain;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.hero h1 {
+  color: #263238;
+  letter-spacing: -1px;
+  line-height: 100%;
+}
+
+.hero .price {
+  color: #ffbb00;
+  display: inline;
+}
+
+.hero {
+  h1,
+  .price {
+    font-size: 3.625rem;
+    font-weight: 700;
+  }
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  height: 24.25rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 0rem;
+  }
+
+  .image-container {
+    height: 20rem;
+  }
+
+  .video-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero {
+    h1,
+    .price {
+      font-size: 2.25rem;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    h1,
+    .price {
+      font-size: 1.25rem;
+    }
+  }
+
+  .image-container {
+    height: 15rem;
+  }
+  .hero-content {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+}

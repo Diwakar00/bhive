@@ -1,6 +1,6 @@
-import AppSection from "./AppSection";
-import Features from "./Features";
-import HeroBanner from "./HeroBanner";
+import AppSection from "./AppSection/AppSection";
+import Features from "./Features/Features";
+import HeroBanner from "./HeroBanner/HeroBanner";
 import Offices from "./Offices";
 
 const Sections: React.FC = () => {

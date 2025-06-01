@@ -1,23 +1,17 @@
-import { Download } from "lucide-react";
+import "./AppSection.css";
 
 const AppSection = () => (
-  <section className="app-section">
+  <section className="section">
+    <h2>Download our app now</h2>
     <div className="app-content">
       <div className="app-text">
-        <h2>Download our app now</h2>
         <p>
           Boost your productivity with the BHIVE Workspace app. Elevate your
           workspace, collaborate efficiently, and unlock exclusive perks.
         </p>
         <div className="app-buttons">
-          <a href="#" className="app-btn">
-            <Download size={20} />
-            Google Play
-          </a>
-          <a href="#" className="app-btn">
-            <Download size={20} />
-            App Store
-          </a>
+          <img src="src\assets\playstore.png" className="app-btn"></img>
+          <img src="src\assets\appstore.png" className="app-btn"></img>
         </div>
       </div>
       <div className="phone-mockup">

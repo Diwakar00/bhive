@@ -173,10 +173,6 @@ p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  body {
-    padding: 1rem;
-  }
-
   .workspace-card {
     width: 20rem;
     height: 21.25rem;
