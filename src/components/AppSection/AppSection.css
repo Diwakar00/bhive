@@ -1,65 +1,102 @@
+.app-section {
+  position: relative;
+  height: 32rem;
+  padding: 0;
+  margin-bottom: 2rem;
+  h2 {
+    padding: 0 2rem;
+  }
+}
 .app-content {
-  max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   gap: 3rem;
-  align-items: center;
+  align-items: end;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  padding: 0 2rem;
 }
 
-.app-text h2 {
-  color: white;
-  margin-bottom: 1rem;
+.app-text {
+  margin-bottom: 1.5rem;
 }
 
-.app-text p {
-  font-size: 1.1rem;
+.app-text h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  color: #605f5f;
   margin-bottom: 2rem;
-  opacity: 0.9;
 }
 
 .app-buttons {
   display: flex;
-  gap: 1rem;
-  justify-content: center;
+  gap: 1.5rem;
+  justify-content: flex-start;
 }
 
 .app-btn {
-  background: black;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: background 0.3s ease;
-}
-
-.app-btn:hover {
-  background: #333;
+  height: 2.875rem;
 }
 
 .phone-mockup {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .phone-mockup img {
-  max-width: 300px;
+  max-width: 25rem;
   height: auto;
 }
 
+.background {
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  height: 15rem;
+  bottom: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(96, 95, 95, 0.15);
+}
+
 @media (max-width: 768px) {
+  .app-section {
+    display: flex;
+    justify-content: center;
+  }
+
   .app-content {
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
+    justify-items: center;
+  }
+
+  .phone-mockup img {
+    max-width: 20rem;
+    height: auto;
+  }
+
+  .app-text {
+    h4 {
+      display: none;
+    }
   }
 
   .app-buttons {
-    flex-direction: column;
     align-items: center;
+  }
+
+  .background {
+    width: 90%;
+    height: 27rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .background {
+    width: 95%;
   }
 }

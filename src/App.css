@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
   line-height: 1.6;
   color: #333;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .call-btn {
-  background: #ffbb00;
+  background: #f2b304;
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -79,7 +79,7 @@ body {
 .footer {
   background: #1a252f;
   color: white;
-  padding: 2rem;
+  height: 2.75rem;
   text-align: center;
 }
 
@@ -94,7 +94,6 @@ body {
   }
 
   .spaces-grid {
-    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 }

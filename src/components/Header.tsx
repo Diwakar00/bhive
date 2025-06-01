@@ -5,7 +5,7 @@ const Header: React.FC = () => (
     <nav className="nav">
       <img src="/assets/bhive-logo.png" alt="bhive-logo" className="logo"></img>
       <button className="call-btn">
-        <Phone size={16} />
+        <Phone />
       </button>
     </nav>
   </header>
